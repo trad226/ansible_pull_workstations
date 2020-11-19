@@ -10,3 +10,11 @@
     owner: root
     group: root
     mode: 0440
+
+- name: copy bashrc
+  copy:
+    src: files/bashrc
+    dest: /home/tege/.bashrc
+    owner: tege
+    group: tege
+    mode: 0644
