@@ -18,19 +18,3 @@
     owner: tege
     group: tege
     mode: 0644
-
-- name: copy ssh config
-  copy:
-    src: files/config
-    dest: /home/tege/.ssh/config
-    owner: tege
-    group: tege
-    mode: 0644
-
-- name: copy ssh keys
-  copy:
-    src: files/id_ed25519
-    dest: /home/tege/.ssh/id_ed25519
-    owner: tege
-    group: tege
-    mode: 0600
